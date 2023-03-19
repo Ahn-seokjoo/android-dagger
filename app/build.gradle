@@ -17,7 +17,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
+// https://thdev.tech/android/2020/10/07/Remove-kotlinx-synthetic/ -> kotlin android extentions
 
 android {
     compileSdkVersion 32
@@ -67,4 +69,10 @@ dependencies {
     androidTestImplementation "androidx.test:runner:$androidx_test_version"
     androidTestImplementation "androidx.test:core-ktx:$androidx_test_version"
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // 2.45가 최신 버전이더라 ~
+    // 2023-03월 https://mvnrepository.com/artifact/com.google.dagger/dagger
+    def dagger_version = "2.40"
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 }
