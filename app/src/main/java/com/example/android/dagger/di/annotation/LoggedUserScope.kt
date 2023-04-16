@@ -1,4 +1,4 @@
-package com.example.android.dagger.di
+package com.example.android.dagger.di.annotation
 
 import javax.inject.Scope
 

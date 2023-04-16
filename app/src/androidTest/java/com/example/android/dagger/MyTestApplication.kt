@@ -21,7 +21,4 @@ import com.example.android.dagger.user.UserManager
 
 class MyTestApplication : MyApplication() {
 
-    override val userManager by lazy {
-        UserManager(FakeStorage())
-    }
 }

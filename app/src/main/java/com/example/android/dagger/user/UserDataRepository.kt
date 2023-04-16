@@ -16,7 +16,7 @@
 
 package com.example.android.dagger.user
 
-import com.example.android.dagger.di.LoggedUserScope
+import com.example.android.dagger.di.annotation.LoggedUserScope
 import javax.inject.Inject
 import kotlin.random.Random
 

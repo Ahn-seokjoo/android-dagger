@@ -1,8 +1,10 @@
 package com.example.android.dagger.di
 
 import android.content.Context
-import com.example.android.dagger.main.MainActivity
-import com.example.android.dagger.settings.SettingsActivity
+import androidx.lifecycle.ViewModel
+import com.example.android.dagger.di.module.StorageModule
+import com.example.android.dagger.di.module.ViewModelFactoryModule
+import com.example.android.dagger.di.module.ViewModelModule
 import com.example.android.dagger.user.UserManager
 import dagger.BindsInstance
 import dagger.Component

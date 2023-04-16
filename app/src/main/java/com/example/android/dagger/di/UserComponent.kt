@@ -1,5 +1,6 @@
 package com.example.android.dagger.di
 
+import com.example.android.dagger.di.annotation.LoggedUserScope
 import com.example.android.dagger.main.MainActivity
 import com.example.android.dagger.settings.SettingsActivity
 import dagger.Subcomponent
